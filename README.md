@@ -83,22 +83,3 @@ Risk score: 58/100
 [medium] Missing security header -> https://example.com/login
 [medium] Possible open redirect -> https://example.com/redirect?url=https://example.org
 ```
-
-## Project structure
-
-```text
-src/
-  cli/
-  core/
-  parsers/
-  reporters/
-  scanners/
-  types/
-  utils/
-```
-
-## Notes
-
-This project is intentionally HTTP-only. It will not catch browser-only issues like DOM XSS that require JS execution.
-
-Use it only against systems you own or are explicitly authorized to assess.
